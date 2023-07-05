@@ -37,6 +37,11 @@ return {
       dependencies = {'nvim-lua/plenary.nvim'},
   },
   {
+      'akinsho/toggleterm.nvim',
+      tag = "*",
+      config = true
+  },
+  {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v1.x',
       dependencies = {

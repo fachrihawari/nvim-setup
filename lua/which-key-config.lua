@@ -122,6 +122,16 @@ local mappings = {
             "Workspace Symbols",
         },
     },
+    --Toggle Term
+    t = {
+        name = "Terminal",
+        f = { "<cmd>ToggleTerm direction=float<cr>", "Float" }, -- Floating Terminal
+
+        -- Play with size according to your needs.
+        h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" }, -- Horizontal Terminal
+        v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" }, -- Vertical Terminal
+    },
+    
 }
 
 which_key.setup(setup)
