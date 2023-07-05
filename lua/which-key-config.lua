@@ -105,6 +105,23 @@ local mappings = {
         k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
         c = { "<cmd>Telescope commands<cr>", "Commands" },
     },
+
+    -- LSP
+    ["m"] = { "<cmd>Mason<cr>", "Mason UI for Lsp" },
+    ["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
+
+    l = {
+        name = "LSP",
+        a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+        i = { "<cmd>LspInfo<cr>", "Info" },
+        l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
+        r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+        s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
+        S = {
+            "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
+            "Workspace Symbols",
+        },
+    },
 }
 
 which_key.setup(setup)
