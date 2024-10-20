@@ -21,7 +21,7 @@ opt.completeopt = "menu,menuone,noselect,preview"
 opt.cursorline = true -- Enable highlighting of the current line
 opt.ignorecase = true -- Ignore case
 opt.list = true -- Show some invisible characters (tabs...
-opt.relativenumber = true -- Relative line numbers
+-- opt.relativenumber = true -- Relative line numbers
 opt.wrap = false -- Disable line wrap
 
 -- opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
