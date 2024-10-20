@@ -29,9 +29,12 @@ require('lazy').setup {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  {
+  { -- Tab bar
     'akinsho/bufferline.nvim', version = "*",
     dependencies = {'nvim-tree/nvim-web-devicons'}
+  },
+  { -- Key binding help
+    "folke/which-key.nvim"
   }
 }
 
