@@ -17,9 +17,17 @@ require('lazy').setup {
   { -- VSCode Light Theme
     'Mofiqul/vscode.nvim'
   },
-  { -- Statusline for Bottom status bar
+  { -- Bottom status bar
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
+  { -- File Explorer
+    "nvim-tree/nvim-tree.lua",
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
+  { -- Search
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  }
 }
 
