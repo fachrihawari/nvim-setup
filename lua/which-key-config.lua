@@ -5,6 +5,7 @@ end
 
 local mappings = {
   -- Navigation
+  { "<leader>b", "<cmd>NvimTreeToggle<cr>", desc = "Switch window", nowait = true, remap = false },
   { "<leader>e", "<cmd>wincmd w<cr>", desc = "Switch window", nowait = true, remap = false },
   { "<tab>", "<cmd>bnext<cr>", desc = "Next buffer", nowait = true, remap = false },
 
