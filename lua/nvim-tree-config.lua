@@ -16,6 +16,9 @@ require('nvim-tree').setup {
     root_folder_modifier = ":t",
     -- These icons are visible when you install web-devicons
     icons = {
+      show = {
+        folder_arrow = false,
+      },
       glyphs = {
         default = "",
         symlink = "",
