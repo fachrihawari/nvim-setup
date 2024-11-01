@@ -8,6 +8,10 @@ require('nvim-tree').setup {
     enable = true,
     update_cwd = true,
   },
+  view = {
+    side = "right",
+    width = 45,
+  },
   renderer = {
     root_folder_modifier = ":t",
     -- These icons are visible when you install web-devicons
@@ -46,9 +50,5 @@ require('nvim-tree').setup {
       warning = "",
       error = "",
     },
-  },
-  view = {
-    width = 30,
-    side = "left",
   },
 }
