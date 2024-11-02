@@ -23,7 +23,7 @@ opt.ignorecase = true -- Ignore case
 opt.list = true -- Show some invisible characters (tabs...
 opt.relativenumber = true -- Relative line numbers
 opt.wrap = false -- Disable line wrap
-
+opt.signcolumn = "yes"
 -- opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
 -- opt.shortmess:append { W = true, I = true, c = true }
 -- opt.sidescrolloff = 8 -- Columns of context
