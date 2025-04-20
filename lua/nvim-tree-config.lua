@@ -9,7 +9,6 @@ require('nvim-tree').setup {
     update_cwd = true,
   },
   view = {
-    side = "right",
     width = 30,
   },
   filters = {

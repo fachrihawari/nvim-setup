@@ -42,9 +42,10 @@ require('mason-lspconfig').setup({
 local cmp = require('cmp')
 
 cmp.setup({
-  sources = {
-    {name = 'nvim_lsp'},
-  },
+  sources =cmp.config.sources({
+    { name = 'render-markdown' },
+    { name = 'nvim_lsp' },
+  }), 
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
     ['<CR>'] = cmp.mapping.confirm({select = false}),
