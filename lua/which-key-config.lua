@@ -28,6 +28,12 @@ local mappings = {
   { "<leader>t", group = "Terminal", nowait = true, remap = false },
   { "<leader>tt", "<cmd>split | terminal<cr>", desc = "Terminal horizontal", nowait = true, remap = false },
   { "<leader>ty", "<cmd>vsplit | terminal<cr>", desc = "Terminal vertical", nowait = true, remap = false },
+
+  -- Code Companion
+  { "<leader>c", group = "Code Companion", nowait = true, remap = false },
+  { "<leader>cm", "<cmd>CodeCompanionCmd<cr>", desc = "Code Companion Cmd", nowait = true, remap = false },
+  { "<leader>cc", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Code Companion Chat", nowait = true, remap = false },
+  { "<leader>ca", "<cmd>CodeCompanionAction<cr>", desc = "Code Companion Action", nowait = true, remap = false },
 }
 
 which_key.add(mappings)
