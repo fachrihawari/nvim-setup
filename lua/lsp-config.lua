@@ -24,6 +24,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'cr', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
     vim.keymap.set({'n', 'x'}, 'cf', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
     vim.keymap.set('n', 'ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+    vim.keymap.set('n', 'cd', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
+
   end,
 })
 
