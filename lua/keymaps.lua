@@ -15,6 +15,8 @@ vim.api.nvim_set_keymap('n', '<leader>yy', ':%y<CR>', { noremap = true, silent =
 
 -- back to esc
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', 'jj', '<C-\\><C-n>', { noremap = true, silent = true })
+
 
 -- add new empty line bottom
 vim.api.nvim_set_keymap('n', 'o', 'o<Esc>', { noremap = true, silent = true })
